@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Perfil del estudiante</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif; 
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h2{
+            color: #1f618d;
+        }
+
+        p{
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contenedor {
+            background-color: white;
+            width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #mensaje {
+            color: #8e44ad;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        #curso{
+            color: purple;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+    </style>
+    <script>
+        function MostrarMensaje(){
+            //alert("Hola mami");
+            document.getElementById("mensaje").innerHTML = "Primer paso completado: HTML, CSS y JavaScript básico.";
+        }
+
+        function CursoFav(){
+            document.getElementById("curso").innerHTML = "Mi curso favorito por ahora es Programación Web.";
+        }
+
+        function Saludar(){
+            let nombre = document.getElementById("nombre").value;
+            document.getElementById("saludo").innerHTML = "Hola " + nombre + ", bienvenida a Programación Web.";
+        }
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Mi perfil</h1>
+
+        <h2>Datos personales</h2>
+        <p>Mi nombre es Naomi.</p>
+        <p>Estudio Ingeniería de Sistemas.</p>
+
+        <h2>Cursos más difíciles</h2>
+        <ul>
+            <li>Programación web</li>
+            <li>EDA II</li>
+        </ul>
+
+        <h2>Curso que me preocupa más</h2>
+        <p>Me preocupa más el curso de Investigación de Operaciones I.</p>
+        <h2>Mi objetivo</h2>
+        <p>Quiero adelantarme para el ciclo con buena base.</p>
+        <button onclick="MostrarMensaje()">Empezar ciclo</button>
+        <p id="mensaje"></p>
+        <button onclick="CursoFav()">Mostrar curso favorito</button>
+        <p id = "curso"></p>
+
+        <h2>Personalizar saludo</h2>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <button onclick="Saludar()">Saludar</button>
+        <p id = "saludo"></p>
+
+    </div>
+</body>
+</html>
