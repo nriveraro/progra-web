@@ -73,7 +73,11 @@
 
         function Saludar(){
             let nombre = document.getElementById("nombre").value;
-            document.getElementById("saludo").innerHTML = "Hola " + nombre + ", sigue practicando en Programación Web.";
+            if (nombre==""){
+                document.getElementById("saludo").innerHTML = "Por favor, escribe tu nombre.";
+            } else{
+                document.getElementById("saludo").innerHTML = "Hola " + nombre + ", sigue practicando en Programación Web.";
+            }
         }
     </script>
 </head>
