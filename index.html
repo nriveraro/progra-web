@@ -53,6 +53,13 @@
             font-weight: bold;
             margin-top: 8px;
         }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
     </style>
     <script>
         function MostrarMensaje(){
@@ -66,7 +73,7 @@
 
         function Saludar(){
             let nombre = document.getElementById("nombre").value;
-            document.getElementById("saludo").innerHTML = "Hola " + nombre + ", bienvenida a Programación Web.";
+            document.getElementById("saludo").innerHTML = "Hola " + nombre + ", sigue practicando en Programación Web.";
         }
     </script>
 </head>
@@ -97,6 +104,7 @@
         <input type="text" id="nombre" placeholder="Escribe tu nombre">
         <button onclick="Saludar()">Saludar</button>
         <p id = "saludo"></p>
+        
 
     </div>
 </body>
