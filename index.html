@@ -59,6 +59,39 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
+        a{
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            width: 30%;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td{
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
         
     </style>
     <script>
@@ -110,6 +143,41 @@
         <p id = "saludo"></p>
         <!-- Cambio hecho desde Github para practicar pull -->
 
+        <h2>Enlaces importantes</h2>
+        <p>
+            Visita mi repositorio en
+            <a href="https://github.com/nriveraro/progra-web" target="_blank">GitHub</a>
+        </p>
+        <p>
+            <a href="#tabla-cursos">Ir a mi tabla de cursos</a>
+        </p>
+
+        <h2>Mi imagen</h2>
+        <img src="https://wallpapers.com/images/hd/retro-minion-pfp-x3xnxp7b6zjcd0l6.jpg" alt="Imagen de practica">
+
+        <h2 id="tabla-cursos">Tabla de cursos</h2>
+        <table>
+            <tr>
+                <th>Curso</th>
+                <th>Dificultad</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td>Programación Web</td>
+                <td>Media</td>
+                <td>En práctica</td>
+            </tr>
+            <tr>
+                <td>EDA II</td>
+                <td>Alta</td>
+                <td>Pendiente</td>
+            </tr>
+            <tr>
+                <td>Redes</td>
+                <td>Alta</td>
+                <td>Me preoucpa</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
