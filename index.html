@@ -3,97 +3,8 @@
 <head>
     <meta charset = "UTF-8">
     <title>Perfil del estudiante</title>
-    <style>
-        body{
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif; 
-        }
+    <link rel="stylesheet" href="style.css">
 
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-        }
-
-        h2{
-            color: #1f618d;
-        }
-
-        p{
-            font-size: 16px;
-        }
-
-        button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .contenedor {
-            background-color: white;
-            width: 70%;
-            margin: 30px auto;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        #mensaje {
-            color: #8e44ad;
-            font-weight: bold;
-            margin-top: 8px;
-        }
-
-        #curso{
-            color: purple;
-            font-weight: bold;
-            margin-top: 8px;
-        }
-
-        input {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        a{
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        a:hover{
-            text-decoration: underline;
-        }
-
-        img {
-            display: block;
-            width: 30%;
-            margin: 15px auto;
-            border-radius: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        th, td{
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #3498db;
-            color: white;
-        }
-        
-    </style>
     <script>
         function MostrarMensaje(){
             //alert("Hola mami");
@@ -178,6 +89,32 @@
                 <td>Me preoucpa</td>
             </tr>
         </table>
+
+        <h2>Block vs Inline</h2>
+        <div class="bloque-ejemplo">Soy un div: elemento block</div>
+        <div class = "bloque-ejemplo">Yo también soy block, por eso bajo a la otra línea</div>
+        <p>
+            Este texto contiene un <span class = "inline-ejemplo">span inline</span>
+            y tambien un <a href="#">enlace inline</a>, por eso siguen en la misma línea
+        </p>
+
+        <h2>Formulario de estudiante</h2>
+        <form>
+            <label for = "correo">Correo:</label>
+            <input type="email" id="correo" placeholder="Escribe tu correo">
+            <br><br>
+            <label for="curso-select">Curso que quieres reforzar:</label>
+            <select id="curso-select">
+                <option>Programación Web</option>
+                <option>EDA II</option>
+                <option>Redes</option>
+            </select>
+            <br><br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" rows="4" cols="40" placeholder="Escribe que tema te cuesta más"></textarea>
+            <br><br>
+            <button type="button">Enviar formulario</button>
+        </form>
     </div>
 </body>
 </html>
